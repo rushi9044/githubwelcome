@@ -27,4 +27,10 @@ public class EmployeeController {
         return  ResponseEntity.ok(employeeService.getDataByUsingAnyInput(employee));
     }
 
+    @GetMapping("/hello")
+    public String sayHello()
+    {
+        return "Welcome";
+    }
+
 }
